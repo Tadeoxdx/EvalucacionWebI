@@ -1,0 +1,97 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    background-color: #f0f0f0;
+}
+
+.frame-container {
+    display: grid;
+    grid-template-columns: 30% 70%;
+    grid-template-rows: auto 1fr auto;
+    height: 100vh;
+    gap: 10px;
+    padding: 10px;
+}
+
+#frameA {
+    grid-column: span 2;
+    height: 50px; /* Marco superior delgado */
+    background-color: #000; /* Negro */
+    color: #fff; /* Letras blancas */
+}
+
+#frameB {
+    height: calc(50vh - 80px); /* Mitad superior menos espacio del marco A y gaps */
+    background-color: #ccc; /* Gris */
+    color: #000; /* Letras negras */
+}
+
+#frameC {
+    height: calc(50vh - 80px); /* Mitad superior menos espacio del marco A y gaps */
+    background-color: #fff; /* Blanco */
+    color: #000; /* Letras negras */
+}
+
+#frameD {
+    grid-column: span 2;
+    height: calc(50vh - 20px); /* Mitad inferior menos gap */
+    background-color: #000; /* Negro */
+    color: #fff; /* Letras blancas */
+}
+
+.frame {
+    border: 2px solid #ccc;
+    border-radius: 10px;
+    width: 100%;
+    box-sizing: border-box; /* Asegura que el padding y border se incluyan en el ancho total del elemento */
+}
+
+h1, h2, h3 {
+    color: inherit; /* Heredar el color del marco */
+}
+
+a {
+    color: inherit; /* Heredar el color del marco */
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.foto {
+    width: 100px;
+    height: auto;
+    border-radius: 50%;
+}
+
+.excel-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 10px;
+}
+
+.excel-table th, .excel-table td {
+    border: 1px solid #ccc;
+    padding: 8px;
+    text-align: left;
+    min-width: 100px;
+}
+
+.excel-table th {
+    background-color: #f2f2f2;
+}
+
+button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+button:hover {
+    background-color: #45a049;
+}

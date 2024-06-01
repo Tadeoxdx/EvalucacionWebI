@@ -1,0 +1,14 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Frame A</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>Mi Página Web</h1>
+    <p>Autor: Tu Nombre Completo</p>
+    <p>Valoración: <span>★★★★★</span></p>
+    <p><a href="internal.html" target="frameB">Ir a página interna</a></p>
+</body>
+</html>
